@@ -5,13 +5,13 @@ import { useEffect } from "react";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { StyleSheet, Text } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { StyleSheet, View } from "react-native";
 
 import { StatusBar } from "expo-status-bar";
 import { Stack } from "expo-router";
 import Title from "@/src/components/Title";
-import Main from "@/src/components/Main";
+import Form from "@/src/components/Form";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -34,9 +34,11 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <SafeAreaProvider style={styles.container}>
-        <Title />
-        <Main />
+      <SafeAreaProvider>
+        <View style={styles.container}>
+          <Title />
+          <Form />
+        </View>
       </SafeAreaProvider>
     </ThemeProvider>
   );
@@ -55,8 +57,7 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: "#e0e5e5",
+    paddingTop: 30,
   },
 });
