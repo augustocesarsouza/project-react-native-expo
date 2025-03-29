@@ -11,6 +11,20 @@ export const styles = StyleSheet.create({
     marginTop: 30,
   },
 
+  textGlobal: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+
+  textValueImc: {
+    fontWeight: "500",
+  },
+
+  formMain: {
+    width: "100%",
+    alignItems: "center",
+  },
+
   form: {
     width: "100%",
     height: "auto",
@@ -21,7 +35,7 @@ export const styles = StyleSheet.create({
   formLabel: {
     color: "#000000",
     fontSize: 18,
-    paddingLeft: 10
+    paddingLeft: 7
   },
   
   input: {
@@ -38,7 +52,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     alignContent: "center",
     justifyContent: "center",
-    width: "100%",
+    width: "70%",
     backgroundColor: "red",
     padding: 10,
   },
@@ -53,6 +67,16 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     color: "red",
     fontWeight: "bold",
-    paddingLeft: 10
+    paddingLeft: 7
+  },
+
+  containerExhibitionResultImc: {
+    width: "100%",
+    height: "auto",
+    alignItems: "center"
+  },
+
+  listImcs: {
+    marginTop: 20
   }
 });

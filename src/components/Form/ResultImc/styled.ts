@@ -7,21 +7,24 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     justifyContent: "center",
     alignItems: "center", // Centraliza o texto
-    width: "90%",
+    width: "100%",
     gap: 5
   },
 
-  containerButton: {
-    width: "30%",
+  containerTextResultImgValueImc: {
+    width: "100%",
     justifyContent: "center",
-    alignContent: "center",
-    marginBottom: 10
+    flexDirection: "row",
+    marginBottom: 10,
+    gap: 5
   },
 
   buttonShare: {
     backgroundColor: "#3457D5",
     borderRadius: 20,
     padding: 10,
+    width: "20%",
+    marginBottom: 20
   },
 
   textShare: {

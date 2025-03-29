@@ -28,19 +28,13 @@ export default function ResultImc({ messageResultImc, resultImc }: ResultImcProp
 
   return (
     <View style={styles.resultImc}>
-      <View style={styles.containerButton}>
-        {resultImc != null ? (
-          <TouchableOpacity onPress={onShare} style={styles.buttonShare}>
-            <Text style={styles.textShare}>Share</Text>
-          </TouchableOpacity>
-        ) : (
-          <View>
-            <Text>seila</Text>
-          </View>
-        )}
+      <View style={styles.containerTextResultImgValueImc}>
+        <Text style={styles.textResultImc}>{messageResultImc}</Text>
+        <Text style={styles.information}>{resultImc}</Text>
       </View>
-      <Text style={styles.textResultImc}>{messageResultImc}</Text>
-      <Text style={styles.information}>{resultImc}</Text>
+      <TouchableOpacity onPress={onShare} style={styles.buttonShare}>
+        <Text style={styles.textShare}>Share</Text>
+      </TouchableOpacity>
     </View>
   );
 }
